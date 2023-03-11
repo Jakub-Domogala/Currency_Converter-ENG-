@@ -9,4 +9,6 @@ Currency rates are downloaded from `NBP api` and are updated each time you calcu
 To run converter You need to clone this repository and simply open `index.html` file in any common browser.
 
 ### Usage
-You can input values in both windows and accept given value by pressing enter or by clicking outside of the window
+You can input values in both windows and accept given value by pressing enter or by clicking outside of the window.
+
+To change currency just click on the currency name and choose from dropdown list.
