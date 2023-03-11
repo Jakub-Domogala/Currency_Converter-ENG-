@@ -1,0 +1,65 @@
+body {
+    background: linear-gradient(to bottom, rgb(16, 16, 16), rgb(0, 0, 0));
+}
+
+.flag {
+    width: 450px;
+    height: 285px;
+    border-radius: 50px;
+    overflow: hidden;
+    filter: brightness(0.9);
+}
+
+.list {
+    width: 450px;
+    height: 80px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: rgb(63, 63, 63);
+}
+
+input {
+    width: 400px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 50px;
+    resize: none;
+    font-size: 60px;
+}
+
+input,
+select {
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+
+p {
+    text-align: center;
+    font-size: 10px;
+    width: 140px;
+}
+
+.arrow {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.8, 0.1, 0.4, 1);
+    padding: 20px;
+}
+
+.arrow img {
+    width: auto;
+    transition: transform 0.4s cubic-bezier(0.8, 0.1, 0.4, 1);
+    filter: invert(1);
+}
+
+.arrow.rotated img {
+    transform: rotate(180deg);
+}

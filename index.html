@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div>
+        <label for="fromCurrency"></label>
+        <select name="fromCurrency" id="fromCurrency" class="list">
+          <option value="PLN">PLN</option>
+        </select>
+        <br /><br />
+        <img src="img/pl-flag.gif" alt="" class="flag" />
+        <br /><br />
+        <input type="number" step="1" id="left" onchange="inputChanged(true)" />
+      </div>
+      <div class="container">
+        <div class="arrow">
+          <br /><br />
+          <img src="img/arrow.png" alt="arrow" width="100" height="100" />
+          <br />
+          <p>
+            All of the calculation are based on current NBP mid-rates of each
+            currency. The converter does not include any additional fees.
+          </p>
+        </div>
+      </div>
+      <div>
+        <label for="toCurrency"></label>
+        <select
+          name="toCurrency"
+          id="toCurrency"
+          onchange="setFlag()"
+          class="list"
+        >
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="JPY">JPY</option>
+          <option value="GBP">GBP</option>
+        </select>
+        <br /><br />
+        <img src="img/us-flag.gif" alt="" id="flag" class="flag" />
+        <br /><br />
+        <input
+          type="number"
+          step="1"
+          id="right"
+          onchange="inputChanged(false)"
+        />
+      </div>
+    </div>
+    <div class="container">
+      <p>aaa</p>
+    </div>
+    <script defer src="script.js"></script>
+  </body>
+</html>
